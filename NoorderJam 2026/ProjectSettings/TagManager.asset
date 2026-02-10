@@ -4,8 +4,9 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - Ground
-  - Pickaxe
+  - ground
+  - player
+  - boulder
   layers:
   - Default
   - TransparentFX
