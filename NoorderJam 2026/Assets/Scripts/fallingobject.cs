@@ -25,7 +25,6 @@ public class fallingobject : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             rb.bodyType = RigidbodyType2D.Dynamic;
-            Debug.Log("Player entered trigger");
         }
     }
     void OnCollisionEnter2D(Collision2D collision)

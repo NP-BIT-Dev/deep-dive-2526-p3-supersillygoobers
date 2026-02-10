@@ -6,6 +6,7 @@ public class enemy : MonoBehaviour
     public GameObject player;
     private Vector2 savedPosition;
         public Transform[] targets;
+        private SpriteRenderer spider;
 
     private int currentPointIndex = 0;
 
@@ -14,12 +15,15 @@ public class enemy : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        spider = GetComponent<SpriteRenderer>();
         savedPosition = player.transform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
+        float move = Input.GetAxis("Horizontal");
+
         if (targets.Length == 0) return;
         Transform targetPoint = targets[currentPointIndex];
         transform.position = Vector2.MoveTowards(transform.position, targetPoint.position, speed * Time.deltaTime);
@@ -31,6 +35,14 @@ public class enemy : MonoBehaviour
             {
                 currentPointIndex = 0;
             }
+        }
+        else if (transform.position.x > targetPoint.position.x)
+        {
+            spider.flipX = false;
+        }
+        else if (transform.position.x < targetPoint.position.x)
+        {
+            spider.flipX = true;
         }
     }
 

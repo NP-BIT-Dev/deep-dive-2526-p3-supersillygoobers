@@ -9,7 +9,6 @@ public class boulder : MonoBehaviour
     void Start()
     {
         savedPosition = player.transform.position;
-        
     }
 
     // Update is called once per frame
