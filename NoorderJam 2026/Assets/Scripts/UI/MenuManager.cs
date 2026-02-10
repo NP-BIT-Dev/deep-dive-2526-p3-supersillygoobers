@@ -46,6 +46,7 @@ public class MenuController : MonoBehaviour
         AddPanelButton(_levelsPanel, _levelsPanelButtons, "Level3", Level3ButtonClicked);
         AddPanelButton(_levelsPanel, _levelsPanelButtons, "Level4", Level4ButtonClicked);
         AddPanelButton(_levelsPanel, _levelsPanelButtons, "Level5", Level5ButtonClicked);
+        AddPanelButton(_levelsPanel, _levelsPanelButtons, "Level6", Level6ButtonClicked);
 
         _settingsPanel = _settingsPanelTemplate.CloneTree().Q<VisualElement>("Wrapper");
         _settingsPanel.style.display = DisplayStyle.None;
@@ -132,6 +133,8 @@ public class MenuController : MonoBehaviour
     private void Level3ButtonClicked() => SceneManager.LoadScene("Level 3");
     private void Level4ButtonClicked() => SceneManager.LoadScene("Level 4");
     private void Level5ButtonClicked() => SceneManager.LoadScene("Level 5");
+    private void Level6ButtonClicked() => SceneManager.LoadScene("Level 6");
+
 
     private void ExitButtonClicked() => Application.Quit();
 }

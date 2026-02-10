@@ -1,11 +1,12 @@
 <engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI%20Toolkit%20copy/MainMenuStyle.uss?fileID=7433441132597879392&amp;guid=d63c6a6aa1f950749ab7f3ca4adfa98c&amp;type=3#MainMenuStyle" />
     <engine:VisualElement name="Wrapper" style="flex-grow: 1;">
-        <engine:Button text="Level 1" name="Level1" class="button" style="top: 25%;" />
+        <engine:Button text="Level 1" name="Level1" class="button" style="top: 40%; left: 10%;" />
         <engine:Button text="Level 2" name="Level2" class="button" style="top: 40%; background-image: url(&quot;project://database/Assets/UI/UI%20buttons/Sliced%20PNG%C2%B4s/MediumButtonCave.png?fileID=2800000&amp;guid=4be4611f967d1f24ba6982bbdce738ff&amp;type=3#MediumButtonCave&quot;);" />
-        <engine:Button text="Level 3" name="Level3" class="button" style="top: 55%;" />
-        <engine:Button text="Level 4" name="Level4" class="button" style="top: 70%;" />
-        <engine:Button text="Level 5" name="Level5" class="button" style="top: 85%;" />
+        <engine:Button text="Level 3" name="Level3" class="button" style="top: 40%; right: 10%;" />
+        <engine:Button text="Level 4" name="Level4" class="button" style="top: 60%; left: 10%;" />
+        <engine:Button text="Level 5" name="Level5" class="button" style="top: 60%;" />
+        <engine:Button text="Level 6" name="Level6" class="button" style="top: 60%; right: 10%;" />
         <engine:Button name="LevelBackButton" class="button" style="top: 10%; width: 124px; left: auto; background-image: url(&quot;project://database/Assets/UI/UI%20buttons/Sliced%20PNG%C2%B4s/BackButtonCave.png?fileID=2800000&amp;guid=b824442f57ebfc74eae3f32b26d0cc5e&amp;type=3#BackButtonCave&quot;);" />
     </engine:VisualElement>
 </engine:UXML>
