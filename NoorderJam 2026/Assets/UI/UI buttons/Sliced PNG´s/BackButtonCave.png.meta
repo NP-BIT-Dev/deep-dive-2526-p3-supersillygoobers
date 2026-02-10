@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9cd63af0dbf327547844640bd3cbd2a8
+guid: b824442f57ebfc74eae3f32b26d0cc5e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4706585101651344933
-    second: ikigai_0
+      213: 8487849622566321244
+    second: BackButtonCave_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ikigai_0
+      name: BackButtonCave_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1327
-        height: 1015
+        width: 11
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 52ef211a636215140800000000000000
-      internalID: 4706585101651344933
+      spriteID: c5cbffbd246eac570800000000000000
+      internalID: 8487849622566321244
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ikigai_0: 4706585101651344933
+      BackButtonCave_0: 8487849622566321244
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
