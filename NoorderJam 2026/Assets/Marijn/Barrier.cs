@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Tp : MonoBehaviour
+public class Barrier: MonoBehaviour
 {
     GameObject player;
 
@@ -14,7 +14,7 @@ public class Tp : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            SceneManager.LoadScene("Level 2");
         }
     }
 }
