@@ -20,4 +20,12 @@ public class MenuReturn : MonoBehaviour
     
     private void ExitButtonClicked() => SceneManager.LoadScene("Main Menu");
 
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape) && SceneManager.GetActiveScene().name != "Main Menu")
+        {
+            SceneManager.LoadScene("Main Menu");
+            Debug.Log("Escape key pressed, returning to Main Menu.");
+        }
+    }
 }

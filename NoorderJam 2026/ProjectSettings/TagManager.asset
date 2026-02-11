@@ -7,6 +7,8 @@ TagManager:
   - ground
   - player
   - boulder
+  - Pickaxe
+  - LevelExit
   layers:
   - Default
   - TransparentFX
