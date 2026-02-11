@@ -1,9 +1,8 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Tp : MonoBehaviour
+public class Barrier: MonoBehaviour
 {
-    public Transform destination;
     GameObject player;
 
     private void Awake()
@@ -15,7 +14,7 @@ public class Tp : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            SceneManager.LoadScene("Level 2");
         }
     }
 }
