@@ -10,24 +10,15 @@ public class TimerScript : MonoBehaviour
     void Start()
     {
         timerText = GameObject.Find("Timer").GetComponent<TextMeshProUGUI>();
-
-		Scene currentScene = SceneManager.GetActiveScene ();
-
-		string sceneName = currentScene.name;
-
-		if (sceneName == "Example 1") 
-		{
-			
-		}
-		else if (sceneName == "Example 2")
-		{
-			
-		}
     }
-    
+
     void Update()
     {
-        TimeTaken += Time.deltaTime;
+        if (SceneManager.GetActiveScene().name != "Main Menu" || SceneManager.GetActiveScene().name != "Example 2")
+        {
+            TimeTaken += Time.deltaTime;
+        }
+
         int minutes = Mathf.FloorToInt(TimeTaken / 60F);
         int seconds = Mathf.FloorToInt(TimeTaken - minutes * 60);
         timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
