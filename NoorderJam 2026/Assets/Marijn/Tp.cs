@@ -3,7 +3,6 @@ using UnityEngine.SceneManagement;
 
 public class Tp : MonoBehaviour
 {
-    public Transform destination;
     GameObject player;
 
     private void Awake()

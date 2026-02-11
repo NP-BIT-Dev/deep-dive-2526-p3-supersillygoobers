@@ -1,20 +1,13 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Barrier: MonoBehaviour
+public class LevelLoader : MonoBehaviour
 {
-    GameObject player;
-
-    private void Awake()
+    private void OnTriggerEnter2D(Collider2D other) 
     {
-        player = GameObject.FindGameObjectWithTag("Player");
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
+        if (other.tag == "LevelExit")
         {
-            SceneManager.LoadScene("Level 2");
+           SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 }
