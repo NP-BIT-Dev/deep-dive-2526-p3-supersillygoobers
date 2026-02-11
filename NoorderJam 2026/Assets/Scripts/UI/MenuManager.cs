@@ -13,6 +13,7 @@ public class MenuController : MonoBehaviour
     private Button _levelsButton;
     private Button _settingsButton;
     private Button _exitButton;
+    private Label _menuLabel;
 
     private VisualElement _levelsPanel;
     private List<Button> _levelsPanelButtons = new List<Button>();
@@ -31,6 +32,7 @@ public class MenuController : MonoBehaviour
         _settingsButton = root.Q<Button>("SettingsButton");
         _levelsButton = root.Q<Button>("LevelsButton");
         _exitButton = root.Q<Button>("ExitButton");
+        _menuLabel = root.Q<Label>("MenuLabel");
 
         _levelsButton.clicked += LevelsButtonClicked;
         _settingsButton.clicked += SettingsButtonClicked;
@@ -103,6 +105,7 @@ public class MenuController : MonoBehaviour
         _levelsButton.style.display = DisplayStyle.None;
         _settingsButton.style.display = DisplayStyle.None;
         _exitButton.style.display = DisplayStyle.None;
+        _menuLabel.style.display = DisplayStyle.None;
 
         panel.style.display = DisplayStyle.Flex;
 
@@ -120,6 +123,7 @@ public class MenuController : MonoBehaviour
         _levelsButton.style.display = DisplayStyle.Flex;
         _settingsButton.style.display = DisplayStyle.Flex;
         _exitButton.style.display = DisplayStyle.Flex;
+        _menuLabel.style.display = DisplayStyle.Flex;
     }
 
     private void LevelsButtonClicked() => ShowPanel(_levelsPanel, _levelsPanelButtons);
