@@ -1,12 +1,13 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class enemy : MonoBehaviour
 {
 
     public GameObject player;
     private Vector2 savedPosition;
-        public Transform[] targets;
-        private SpriteRenderer spider;
+    public Transform[] targets;
+    private SpriteRenderer spider;
 
     private int currentPointIndex = 0;
 
@@ -46,11 +47,11 @@ public class enemy : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
-            player.transform.position = savedPosition;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 }
