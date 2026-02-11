@@ -5,14 +5,14 @@
     font-size: 100px;
     position: absolute;
     background-color: rgba(0, 0, 0, 0);
-    background-image: url("project://database/Assets/UI/UI%20buttons/Sliced%20PNG%C2%B4s/LongGreenButtonDown.png?fileID=2800000&guid=c0e7ce1c250443c439073d87971e0343&type=3#LongGreenButtonDown");
+    background-image: url("project://database/Assets/UI/UI%20buttons/Sliced%20PNG%C2%B4s/MediumButtonCave.png?fileID=2800000&guid=4be4611f967d1f24ba6982bbdce738ff&type=3#MediumButtonCave");
     -unity-font-definition: url("project://database/Assets/UI/Font/Materials/ThaleahFat_TTF.ttf?fileID=12800000&guid=585188cdc4600544eb408bee749e4b3a&type=3#ThaleahFat_TTF");
     -unity-text-align: upper-center;
     transition-duration: 0.5s;
 }
 
 .button:hover {
-    background-image: url("project://database/Assets/UI/UI%20buttons/Sliced%20PNG%C2%B4s/LongGreenButtonDown.png?fileID=2800000&guid=c0e7ce1c250443c439073d87971e0343&type=3#LongGreenButtonDown");
+    background-image: url("project://database/Assets/UI/UI%20buttons/Sliced%20PNG%C2%B4s/MediumButtonCave.png?fileID=2800000&guid=4be4611f967d1f24ba6982bbdce738ff&type=3#MediumButtonCave");
     transition-duration: 0.5s;
     font-size: 100px;
     -unity-background-image-tint-color: rgb(255, 255, 255);
@@ -41,7 +41,5 @@
     right: 1%;
     -unity-font-definition: url("project://database/Assets/UI/Font/Materials/ThaleahFat_TTF.ttf?fileID=12800000&guid=585188cdc4600544eb408bee749e4b3a&type=3#ThaleahFat_TTF");
     font-size: 50px;
-}
-
-.label:click {
+    background-image: url("project://database/Assets/UI/UI%20buttons/Sliced%20PNG%C2%B4s/BigButtonCave.png?fileID=2800000&guid=99c40fc2b16f4504da9d2d5f61686bb3&type=3#BigButtonCave");
 }
