@@ -14,9 +14,14 @@ public class TimerScript : MonoBehaviour
 
     void Update()
     {
-        if (SceneManager.GetActiveScene().name != "Main Menu" || SceneManager.GetActiveScene().name != "Example 2")
+        if (SceneManager.GetActiveScene().name != "Main Menu")
         {
             TimeTaken += Time.deltaTime;
+            timerText.enabled = true;
+        }
+        else if (SceneManager.GetActiveScene().name == "Main Menu")
+        {
+            timerText.enabled = false;
         }
 
         int minutes = Mathf.FloorToInt(TimeTaken / 60F);
