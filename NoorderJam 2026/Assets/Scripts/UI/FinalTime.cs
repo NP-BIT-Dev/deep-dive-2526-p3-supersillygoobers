@@ -12,6 +12,8 @@ public class FinalTime : MonoBehaviour
 
     void Update()
     {
-        FinishedTime.text = "Your Time: " + string.Format("{0:00}:{1:00}", Mathf.FloorToInt(DurationOfRun.TimeTaken / 60F), Mathf.FloorToInt(DurationOfRun.TimeTaken - (Mathf.FloorToInt(DurationOfRun.TimeTaken / 60F) * 60)));
+        int minutes = Mathf.FloorToInt(DurationOfRun.TimeTaken / 60F);
+        int seconds = Mathf.FloorToInt(DurationOfRun.TimeTaken - minutes * 60);
+        FinishedTime.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
 }
