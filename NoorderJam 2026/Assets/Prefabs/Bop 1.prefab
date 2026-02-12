@@ -241,7 +241,7 @@ GameObject:
   - component: {fileID: 1339466949754539397}
   - component: {fileID: 3634380201047863249}
   - component: {fileID: 6479193814750614575}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: HammerHead
   m_TagString: Pickaxe
   m_Icon: {fileID: 0}
