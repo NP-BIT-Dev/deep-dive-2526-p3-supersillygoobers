@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class boulder : MonoBehaviour
 {
@@ -17,7 +18,7 @@ public class boulder : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -25,6 +26,7 @@ public class boulder : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             rb.bodyType = RigidbodyType2D.Dynamic;
+            Destroy (gameObject, 5f);
         }
     }
 
@@ -32,7 +34,7 @@ public class boulder : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            player.transform.position = savedPosition;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 }
