@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class fallingobject : MonoBehaviour
 {
@@ -36,6 +37,7 @@ public class fallingobject : MonoBehaviour
         {
             player.transform.position = savedPosition;
             GameObject.Destroy(gameObject);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
         if (collision.gameObject.CompareTag("ground"))
