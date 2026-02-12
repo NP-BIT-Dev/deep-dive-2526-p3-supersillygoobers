@@ -22,6 +22,7 @@ public class TimerScript : MonoBehaviour
         else if (SceneManager.GetActiveScene().name == "Main Menu")
         {
             timerText.enabled = false;
+            TimeTaken = 0;
         }
         else if (SceneManager.GetActiveScene().name == "Speedrun Final Time")
         {
