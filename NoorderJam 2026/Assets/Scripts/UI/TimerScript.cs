@@ -25,9 +25,8 @@ public class TimerScript : MonoBehaviour
         }
         else if (SceneManager.GetActiveScene().name == "Main Menu")
         {
-            timerText.enabled = false;
-            FinishedTime.enabled = false;
-            TimeTaken = 0;
+            Destroy(GameObject.Find("Timer")); 
+            Destroy(GameObject.Find("FinishTime"));
         }
         else if (SceneManager.GetActiveScene().name == "SpeedrunFinalTime")
         {
