@@ -19904,7 +19904,7 @@ MonoBehaviour:
   m_text: New Text
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 07bb232fc160a6b42bb129938c100c6a, type: 2}
-  m_sharedMaterial: {fileID: -7067118642306777769, guid: 07bb232fc160a6b42bb129938c100c6a, type: 2}
+  m_sharedMaterial: {fileID: 8388521925157235491, guid: 07bb232fc160a6b42bb129938c100c6a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
